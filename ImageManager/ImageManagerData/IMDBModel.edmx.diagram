@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6841ca38414544a7bcbadfa5c02b86e5" Name="Diagram1" ZoomLevel="46" >
+        <EntityTypeShape EntityType="IMDBModel.Archive" Width="1.5" PointX="7.5" PointY="15" />
+        <EntityTypeShape EntityType="IMDBModel.Image" Width="1.5" PointX="5.25" PointY="7.25" />
+        <EntityTypeShape EntityType="IMDBModel.MetaData" Width="1.5" PointX="7.5" PointY="7.125" />
+        <EntityTypeShape EntityType="IMDBModel.Package" Width="1.5" PointX="3" PointY="8.875" />
+        <EntityTypeShape EntityType="IMDBModel.PackageSetting" Width="1.5" PointX="5.25" PointY="18.875" />
+        <EntityTypeShape EntityType="IMDBModel.Path" Width="1.5" PointX="5.25" PointY="15.25" />
+        <EntityTypeShape EntityType="IMDBModel.Ranking" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="IMDBModel.StatusType" Width="1.5" PointX="0.75" PointY="10" />
+        <EntityTypeShape EntityType="IMDBModel.TagType" Width="1.5" PointX="3" PointY="14" />
+        <EntityTypeShape EntityType="IMDBModel.Tag" Width="1.5" PointX="5.25" PointY="11.25" />
+        <AssociationConnector Association="IMDBModel.FK_Archives_PathId" />
+        <AssociationConnector Association="IMDBModel.FK_Images_PackageId" />
+        <AssociationConnector Association="IMDBModel.FK_MetaData_ImageId" />
+        <AssociationConnector Association="IMDBModel.FK_Packages_StatusId" />
+        <AssociationConnector Association="IMDBModel.FK_PackageSettings_PackageId" />
+        <AssociationConnector Association="IMDBModel.FK_Paths_PackageId" />
+        <AssociationConnector Association="IMDBModel.FK_Rankings_PackageId" />
+        <AssociationConnector Association="IMDBModel.FK_Tags_PackageId" />
+        <AssociationConnector Association="IMDBModel.FK_Tags_TypeId" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
